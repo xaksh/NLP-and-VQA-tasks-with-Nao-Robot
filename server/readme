@@ -1,1 +1,3 @@
-This is the server side where the computations are running.a
+This is the server side where the computations are running. The socket code is used to recieve the questions and send the query answers back to the main program on the local machine.
+
+THe AllenNLP and Pythia codes need to be developed and used with scokets. The AllenNLP and Pythia both need to be run on different ports.
