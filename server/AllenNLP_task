@@ -1,0 +1,23 @@
+from allennlp.predictors.predictor import Predictor
+import sys
+
+
+question_words = ["what", "when", "why", "which", "who", "how", "whose", "whom", "where"]
+
+userinput = str(sys.argv[1])
+input_array = userinput.split(" ")
+# userinput = str(input("Say: "))
+# input_array = userinput.split(" ")
+if "forget everything" in userinput:
+    open("passage.txt", "w").close()
+    exit()
+if str(input_array[0]).lower() in question_words:
+    print("Question")
+    predictor = Predictor.from_path("predictor_path_here")
+    passage = open("passage.txt", "r").read().replace('\n', '')
+    result=predictor.predict(passage=passage,question=userinput)
+    print("Answer: " + str(result['best_span_str']))
+else:
+    print("Not a Question")
+    with open("passage.txt", "a") as passage:
+        passage.write(userinput+". ")
