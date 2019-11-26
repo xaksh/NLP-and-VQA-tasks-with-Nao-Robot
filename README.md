@@ -20,4 +20,4 @@ During the demo, the robot was able to tell if the robot sees certain objects, c
 
 The resutls can be improved by using training data for a specific application especaially of the environment in which the robot is to be used.
 
-Note: I am not incuding the Pythia code as it depends on you how and what you want make the robot answer questions on.
+Note: I am not incuding the Pythia code as it depends on you, how and what all you want to make the robot answer questions on. For more look into the Pythia repo here: https://github.com/facebookresearch/pythia
