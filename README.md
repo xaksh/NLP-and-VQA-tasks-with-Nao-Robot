@@ -22,4 +22,4 @@ The resutls can be improved by using training data for a specific application es
 
 Note: I am not incuding the Pythia code as it depends on you, how and what all you want to make the robot answer questions on. For more look into the Pythia repo here: https://github.com/facebookresearch/pythia
 
-A demo video will be uploaded soon.
+Demo Video: https://youtu.be/fhbk0k7_Cfo
